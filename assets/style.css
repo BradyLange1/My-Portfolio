@@ -32,6 +32,10 @@ header h1 {
     background-color: var(--light);
 }
 
+.lio {
+    color: #007ea7;
+}
+
 /* nav bar */
 
 nav ul{
@@ -40,62 +44,93 @@ nav ul{
 }
 
 nav li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    padding-right: 25px;
 }
 
 nav li a {
     color: var(--light);
     font-size: 20px;
+    text-decoration: none;
 }
 
 nav li a:hover {
     color: var(--dark);
     background-color: var(--light);
+    transition: .4s;
 }
 
 /* image below header */
 
-.top-image {
+.hero {
     width: 100%;
-    height: 150px;
+    height: 200px;
+    background-image: url(./images/Image-Below-Header.jpg);
+    background-position: center;
 }
 
 /* aside */
+
+aside {
+    width: 25%;
+    display: inline-block;
+}
+
+aside section {
+    display: flex;
+    justify-content: end;
+}
 
 .aside-heading {
     text-align: end;
     padding-right: 10px;
     color: var(--dark);
-    position: relative;
-    left: 200px;
     width: 200px;
     border-right: 2px solid var(--dark);
-    display: inline-block;
     font-size: 30px;
 }
 
 #first-section {
+    position: relative;
+    margin-top: 50px;
     height: 100px;
 }
 
 #second-section {
-    position: relative;
-    top: 50px;
+    margin-top: 50px;
     height: 250px;
 }
 
 #third-section {
-    position: relative;
-    top: 100px;
+    margin-top: 50px;
     height: 100px;
+}
+
+/* main */
+
+main {
+    max-width: 75%;
+    float: right;
+}
+
+.about-me {
+    margin-top: 25px;
+    padding: 25px;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    left: 40%;
 }
 
 @media screen and (max-width: 753px){
     header,
     nav,
     main,
-    figure {display: flex;
+    figure,
+    footer {display: flex;
         flex-direction: column;
         align-items: center;
     }
