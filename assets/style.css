@@ -69,34 +69,6 @@ nav li a:hover {
     background-position: center;
 }
 
-/* aside */
-
-/* aside {
-    width: 25%;
-    display: inline-block;
-}
-
-aside section {
-    display: flex;
-    justify-content: end;
-}
-
-#first-section {
-    position: relative;
-    margin-top: 50px;
-    height: 100px;
-}
-
-#second-section {
-    margin-top: 50px;
-    height: 250px;
-}
-
-#third-section {
-    margin-top: 50px;
-    height: 100px;
-} */
-
 /* main */
 
 main {
@@ -117,19 +89,14 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 0px;
+    margin: 20px 150px 20px 150px
 }
 
-.about-me {
-    padding: 0px 20px 0px 20px;
+.main-section-content {
+    padding: 0px 20px;
 }
 
-/* Footer */
-
-footer {
-    position: relative;
-    left: 40%;
-}
+/* media queries */
 
 @media screen and (max-width: 800px){
     header,
