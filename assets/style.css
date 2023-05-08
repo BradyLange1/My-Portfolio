@@ -202,9 +202,15 @@ footer li a:hover {
         border-right: none;
         border-bottom: 2px solid var(--dark);
     }
+    .big-card-image {
+        height: 200px;
+    }
+    .small-card-image {
+        height: 100px;
+    }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 420px) {
     header,
     nav,
     main,
@@ -230,6 +236,7 @@ footer li a:hover {
     }
     .subtitle {
         text-align: center;
+        width: 100%;
     }
 
     .main-section-content a {
