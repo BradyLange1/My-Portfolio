@@ -100,16 +100,32 @@ main {
 
 /* work cards */
 
+.big-card-image {
+    height: 500px;
+    width: 98.5%;
+    border: 5px solid var(--dark);
+    opacity: .5;
+}
+
+.small-card-image {
+    border: 5px solid var(--dark);
+    width: 49%;
+    opacity: .5;
+    height: 250px;
+}
+
+.big-card-image:hover,
+.small-card-image:hover {
+    opacity: 1.0;
+    transition: .4s;
+}
+
 /* footer */
 
 footer ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-}
-
-footer li {
-    
 }
 
 footer li a {
@@ -122,6 +138,7 @@ footer li a {
 footer li a:hover {
     background-color: var(--dark);
     color: var(--light);
+    transition: .4s;
 }
 
 /* media queries */
