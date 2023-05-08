@@ -71,7 +71,7 @@ nav li a:hover {
 
 /* aside */
 
-aside {
+/* aside {
     width: 25%;
     display: inline-block;
 }
@@ -79,15 +79,6 @@ aside {
 aside section {
     display: flex;
     justify-content: end;
-}
-
-.aside-heading {
-    text-align: end;
-    padding-right: 10px;
-    color: var(--dark);
-    width: 200px;
-    border-right: 2px solid var(--dark);
-    font-size: 30px;
 }
 
 #first-section {
@@ -104,18 +95,33 @@ aside section {
 #third-section {
     margin-top: 50px;
     height: 100px;
-}
+} */
 
 /* main */
 
 main {
-    max-width: 75%;
-    float: right;
+    width: 100%;
+}
+
+.aside-heading {
+    text-align: end;
+    padding-right: 10px;
+    color: var(--dark);
+    width: 200px;
+    border-right: 2px solid var(--dark);
+    font-size: 30px;
+    height: 100%;
+}
+
+.main-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px;
 }
 
 .about-me {
-    margin-top: 25px;
-    padding: 25px;
+    padding: 0px 20px 0px 20px;
 }
 
 /* Footer */
@@ -125,17 +131,25 @@ footer {
     left: 40%;
 }
 
-@media screen and (max-width: 753px){
+@media screen and (max-width: 800px){
     header,
     nav,
     main,
     figure,
-    nav li {display: flex;
+    nav li,
+    .main-sections {display: flex;
         flex-direction: column;
         align-items: center;
         padding: 15px;
     }
     header h1 {
         text-align: center;
+    }
+    .aside-heading {
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: center;
+        border-right: none;
+        border-bottom: 2px solid var(--dark);
     }
 }
