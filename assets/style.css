@@ -210,7 +210,7 @@ footer li a:hover {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
     header,
     nav,
     main,
