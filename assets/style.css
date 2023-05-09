@@ -128,7 +128,7 @@ nav li a:hover {
     padding: 10px;
     background-color: var(--dark);
     color: var(--light);
-    border: 10px groove var(--light);
+    border: 5px groove var(--light);
 }
 
 .big-card-image {
