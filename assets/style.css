@@ -92,10 +92,6 @@ nav li a:hover {
 
 /* main */
 
-main {
-    width: 100%;
-}
-
 .aside-heading {
     text-align: end;
     padding-right: 10px;
@@ -119,11 +115,28 @@ main {
 
 /* work cards */
 
+.main-section-content a {
+    position: relative;
+}
+
+.project-name {
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    left: 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--dark);
+    color: var(--light);
+    border: 10px groove var(--light);
+}
+
 .big-card-image {
     height: 500px;
     width: 98.5%;
     border: 5px solid var(--dark);
     opacity: .5;
+    border-style: double;
 }
 
 .small-card-image {
@@ -131,6 +144,7 @@ main {
     width: 49%;
     opacity: .5;
     height: 250px;
+    border-style: double;
 }
 
 .big-card-image:hover,
@@ -207,6 +221,10 @@ footer li a:hover {
     }
     .small-card-image {
         height: 100px;
+    }
+    .project-name {
+        font-size: 10px;
+        bottom: 15px;
     }
 }
 
